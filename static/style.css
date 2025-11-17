@@ -1,0 +1,206 @@
+body {
+    margin: 0;
+    background: #03000f;
+    font-family: 'Orbitron', sans-serif;
+    color: #dffaff;
+}
+
+/* Cyber animated grid */
+.cyber-grid {
+    position: fixed;
+    inset: 0;
+    background:
+        linear-gradient(#0ff2, #0ff2),
+        linear-gradient(90deg, #0ff2, #0ff2);
+    background-size: 50px 50px;
+    animation: gridMove 6s linear infinite;
+    opacity: 0.15;
+    pointer-events: none;
+}
+@keyframes gridMove {
+    from { transform: translateY(0); }
+    to { transform: translateY(50px); }
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.title {
+    font-size: 52px;
+    text-align: center;
+    font-weight: 800;
+    color: #00faff;
+    text-shadow: 0 0 30px #00faff;
+}
+.title span {
+    color: #ff00ea;
+    text-shadow: 0 0 25px #ff00ea;
+}
+
+.card {
+    background: rgba(0, 0, 20, 0.5);
+    border: 2px solid #7500ff;
+    border-radius: 25px;
+    padding: 25px;
+    margin: 40px 0;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 0 35px #2f009b;
+}
+
+.floating {
+    transition: 0.25s;
+}
+.floating:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 45px #9a00ff;
+}
+
+.section-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0ff;
+    text-shadow: 0 0 15px cyan;
+}
+
+.drop-zone {
+    border: 3px dashed #5200ff;
+    padding: 35px;
+    text-align: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.25s;
+    font-size: 20px;
+    color: #c8c8ff;
+}
+.drop-zone:hover {
+    border-color: #ff00ea;
+    box-shadow: 0 0 25px #ff00ea;
+}
+.drop-zone.dragover {
+    border-color: #00faff !important;
+    box-shadow: 0 0 40px #00faff !important;
+    color: #00faff;
+}
+
+.input {
+    padding: 12px 15px;
+    width: 170px;
+    background: #090017;
+    color: #c0ffff;
+    border: 2px solid #300066;
+    border-radius: 12px;
+    font-size: 19px;
+    outline: none;
+    transition: 0.25s;
+}
+.input:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 20px cyan;
+}
+
+.small {
+    width: 120px;
+}
+
+.btn, .btn-primary {
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    cursor: pointer;
+    border: none;
+    font-weight: 800;
+    transition: 0.25s;
+}
+
+.btn {
+    background: #1d0066;
+    color: #d2ccff;
+    border: 2px solid #4500ff;
+}
+.btn:hover {
+    background: #35009b;
+    box-shadow: 0 0 25px #4c00ff;
+}
+
+.btn-primary {
+    background: #00fff6;
+    color: #001c1e;
+    border: 2px solid #00e0e8;
+    box-shadow: 0 0 25px #00fff6;
+}
+.btn-primary:hover {
+    background: #0ff;
+    box-shadow: 0 0 35px #00faff;
+}
+
+.preview-img {
+    width: 100%;
+    max-height: 600px;
+    display: none;
+    border-radius: 15px;
+    border: 2px solid #5200ff;
+}
+
+.textarea {
+    width: 100%;
+    height: 240px;
+    background: #080014;
+    border: 2px solid #320066;
+    color: #99f3ff;
+    border-radius: 15px;
+    padding: 15px;
+    font-size: 18px;
+    outline: none;
+    transition: 0.25s;
+}
+.textarea:focus {
+    border-color: #0ff;
+    box-shadow: 0 0 25px cyan;
+}
+
+.chat {
+    display: flex;
+    gap: 15px;
+}
+
+.chat-input {
+    width: 80%;
+    padding: 15px;
+    border-radius: 14px;
+    background: #070014;
+    border: 2px solid #30006b;
+    color: #c0ffff;
+    font-size: 20px;
+}
+
+.send-btn {
+    width: 20%;
+    background: #ff00ea;
+    border: 2px solid #ff9bf5;
+    color: #000;
+    border-radius: 14px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+.send-btn:hover {
+    background: #ff4df7;
+    box-shadow: 0 0 25px #ff00ea;
+}
+
+.terminal {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(20, 0, 40, 0.6);
+    border: 2px solid #5200ff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #4800c0;
+}
+
+.terminal-text {
+    font-size: 20px;
+    white-space: pre-wrap;
+}
