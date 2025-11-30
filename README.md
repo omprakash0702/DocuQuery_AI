@@ -92,12 +92,12 @@ DocuQuery_AI/
 ├── README.md
 │
 ├── templates/
-│ └── index.html
+│   └── index.html
 │
 └── static/
-├── app.js
-└── style.css
----
+    ├── app.js
+    └── style.css
+
 
 ---
 
