@@ -4,7 +4,6 @@ DocuQuery AI is an end-to-end **AI-powered document understanding and question-a
 
 This project focuses on building a **practical, production-style AI pipeline** by integrating document processing, OCR, backend APIs, and LLM-based reasoning into a single system.
 
----
 
 ## 🚀 Key Features
 
@@ -21,7 +20,6 @@ This project focuses on building a **practical, production-style AI pipeline** b
 - REST API-based backend using Flask
 - Interactive and responsive web interface
 
----
 
 ## 🧠 Core AI & Engineering Concepts
 
@@ -34,7 +32,6 @@ This project focuses on building a **practical, production-style AI pipeline** b
 - Full-stack AI system integration
 - Error handling and fallback pipelines
 
----
 
 ## 🛠️ Tech Stack
 
@@ -56,7 +53,6 @@ This project focuses on building a **practical, production-style AI pipeline** b
 - CSS
 - JavaScript (Fetch API)
 
----
 
 ## 🏗️ System Workflow
 
@@ -73,7 +69,6 @@ This project focuses on building a **practical, production-style AI pipeline** b
 7. The AI generates a grounded answer based strictly on the document.
 8. The response is displayed in the UI in real time.
 
----
 
 ## 📁 Project Structure
 
@@ -100,7 +95,6 @@ DocuQuery_AI/
 
 
 
----
 
 ## 🔌 API Endpoints
 
@@ -113,7 +107,6 @@ DocuQuery_AI/
 | `/ocr` | POST | Run OCR on image |
 | `/chat` | POST | Ask questions using RAG |
 
----
 
 ## 🧪 Example Use Cases
 
@@ -134,7 +127,6 @@ DocuQuery_AI/
 - Implemented RAG-style question answering
 - Learned practical deployment challenges
 
----
 
 ## 🔮 Future Improvements
 
@@ -145,24 +137,20 @@ DocuQuery_AI/
 - Session memory and chat history
 - Full cloud deployment (Render / AWS / Streamlit Cloud)
 
----
 
 ## 📹 Demo Video
 
 https://drive.google.com/file/d/1d-gUCekkUgPPC9ay5JFjKJeG5n1fy5xv/view?usp=drive_link
----
 
 ## 📎 GitHub Repository
 https://github.com/omprakash0702/DocuQuery_AI
 
 
----
 
 ## ✅ Conclusion
 
 DocuQuery AI is a complete **Document Intelligence and Question-Answering system** that demonstrates how OCR, PDF parsing, and LLM-based reasoning can be combined into a real-world AI application. The project highlights strong applied AI skills, system design thinking, and clean backend–frontend integration.
 
----
 
 **Author:** Omprakash  
 **Domain:** Applied AI | Document Intelligence | RAG Systems
