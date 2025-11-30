@@ -1,36 +1,38 @@
-# 📄 DocuQuery AI – AI-Powered Document Query System
+# 📄 DocuQuery AI – AI-Powered Document Intelligence System
 
-DocuQuery AI is an **Applied AI project** that allows users to upload documents (PDFs, images, or text files), extract their content using **PDF parsing and OCR**, and ask questions using a **Retrieval-Augmented Generation (RAG)** workflow powered by an LLM.
+DocuQuery AI is an end-to-end **AI-powered document understanding and question-answering system** that allows users to upload documents (PDFs, images, or text files), automatically extract their content using **PDF parsing and OCR**, and ask natural language questions using a **Retrieval-Augmented Generation (RAG)** workflow powered by a Large Language Model (LLM).
 
-This project was built for the **EONVERSE AI Intern – Applied AI Build Challenge (Option 2)**.
+This project focuses on building a **practical, production-style AI pipeline** by integrating document processing, OCR, backend APIs, and LLM-based reasoning into a single system.
 
 ---
 
-## 🚀 Features
+## 🚀 Key Features
 
 - Upload and process:
-  - PDF files
+  - Digital PDFs
   - Scanned PDFs
   - Images (JPG, PNG, WEBP)
   - Text and code files
 - Automatic file type detection
-- PDF text extraction using `pdfplumber`
+- Text extraction from PDFs using `pdfplumber`
 - OCR fallback for scanned documents using `pytesseract`
 - PDF page preview using `pdf2image`
-- AI-powered question answering using OpenAI (RAG-style)
-- Clean and interactive web UI
-- REST API based backend (Flask)
+- AI-powered question answering using LLM-based RAG
+- REST API-based backend using Flask
+- Interactive and responsive web interface
 
 ---
 
-## 🧠 Core AI Concepts Used
+## 🧠 Core AI & Engineering Concepts
 
 - Optical Character Recognition (OCR)
 - Document parsing and preprocessing
 - Retrieval-Augmented Generation (RAG)
 - Prompt engineering
 - LLM API integration
-- End-to-end AI pipeline design
+- REST API design
+- Full-stack AI system integration
+- Error handling and fallback pipelines
 
 ---
 
@@ -44,9 +46,10 @@ This project was built for the **EONVERSE AI Intern – Applied AI Build Challen
 - pytesseract
 - Pillow
 - python-dotenv
+- Werkzeug
 
 ### AI
-- OpenAI API (LLM-based answering)
+- OpenAI API (LLM-based question answering)
 
 ### Frontend
 - HTML
@@ -57,22 +60,23 @@ This project was built for the **EONVERSE AI Intern – Applied AI Build Challen
 
 ## 🏗️ System Workflow
 
-1. User uploads a file from the UI.
-2. Backend detects file type.
-3. If file is:
-   - **PDF (digital)** → Text extracted using `pdfplumber`
-   - **PDF (scanned)** → Converted to image → OCR using `pytesseract`
-   - **Image** → OCR applied directly
+1. User uploads a document from the web interface.
+2. Backend detects the file type automatically.
+3. Based on file type:
+   - **Digital PDF** → Text extracted using `pdfplumber`
+   - **Scanned PDF** → Converted to image → OCR using `pytesseract`
+   - **Image file** → OCR applied directly
    - **Text file** → Direct decoding
-4. Extracted text becomes the context for the LLM.
-5. User enters a question.
-6. Document text + user query is sent to the OpenAI API.
-7. AI returns a grounded answer based on the document.
-8. Result is displayed in the UI.
+4. Extracted text is stored as contextual knowledge.
+5. User submits a natural language question.
+6. Document text + user query are sent to the LLM through a RAG-style prompt.
+7. The AI generates a grounded answer based strictly on the document.
+8. The response is displayed in the UI in real time.
 
 ---
 
 ## 📁 Project Structure
+---
 
 DocuQuery_AI/
 │
@@ -93,7 +97,7 @@ DocuQuery_AI/
 └── static/
 ├── app.js
 └── style.css
-
+---
 
 ---
 
@@ -144,20 +148,21 @@ DocuQuery_AI/
 
 ## 📹 Demo Video
 
-A short demo video explaining the workflow and code is included in the submission as required by EONVERSE.
-
+https://drive.google.com/file/d/1d-gUCekkUgPPC9ay5JFjKJeG5n1fy5xv/view?usp=drive_link
 ---
 
 ## 📎 GitHub Repository
 https://github.com/omprakash0702/DocuQuery_AI
 
+
 ---
 
 ## ✅ Conclusion
 
-DocuQuery AI demonstrates a complete **Applied AI system** that combines document processing, OCR, and LLM-based reasoning into a practical solution. It reflects curiosity, technical depth, and strong system integration skills.
+DocuQuery AI is a complete **Document Intelligence and Question-Answering system** that demonstrates how OCR, PDF parsing, and LLM-based reasoning can be combined into a real-world AI application. The project highlights strong applied AI skills, system design thinking, and clean backend–frontend integration.
 
 ---
 
-**Developed by:** Omprakash  
-**Category:** Applied AI | Document Intelligence | RAG System  
+**Author:** Omprakash  
+**Domain:** Applied AI | Document Intelligence | RAG Systems
+
