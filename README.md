@@ -73,8 +73,9 @@ This project focuses on building a **practical, production-style AI pipeline** b
 ## 📁 Project Structure
 
 
+<pre>
 DocuQuery_AI/
-|
+│
 ├── app.py
 ├── config.py
 ├── pdf_utils.py
@@ -85,13 +86,15 @@ DocuQuery_AI/
 ├── requirements.txt
 ├── runtime.txt
 ├── README.md
-|
+│
 ├── templates/
-|   └── index.html
-|
+│   └── index.html
+│
 └── static/
     ├── app.js
     └── style.css
+</pre>
+
 
 
 
