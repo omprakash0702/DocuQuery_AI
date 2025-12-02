@@ -14,7 +14,7 @@ This project focuses on building a **practical, production-style AI pipeline** b
   - Text and code files
 - Automatic file type detection
 - Text extraction from PDFs using `pdfplumber`
-- OCR fallback for scanned documents using `pytesseract`
+- OCR fallback for scanned documents using `OpenAI vision`
 - PDF page preview using `pdf2image`
 - AI-powered question answering using LLM-based RAG
 - REST API-based backend using Flask
@@ -40,7 +40,7 @@ This project focuses on building a **practical, production-style AI pipeline** b
 - Flask
 - pdfplumber
 - pdf2image
-- pytesseract
+- OpenAI vision
 - Pillow
 - python-dotenv
 - Werkzeug
@@ -60,7 +60,7 @@ This project focuses on building a **practical, production-style AI pipeline** b
 2. Backend detects the file type automatically.
 3. Based on file type:
    - **Digital PDF** → Text extracted using `pdfplumber`
-   - **Scanned PDF** → Converted to image → OCR using `pytesseract`
+   - **Scanned PDF** → Converted to image → OCR using `OpenAI vision`
    - **Image file** → OCR applied directly
    - **Text file** → Direct decoding
 4. Extracted text is stored as contextual knowledge.
